@@ -1,3 +1,16 @@
 .side
   .side-head
-  .side-main
+    .side-head__left-box
+      .side-head__user-name
+        daiki
+      %ul.side-head__icon-box
+        %li.side-head__icons
+          = link_to '#' do
+            = icon('fas', 'edit',class: "icon-coler")
+        %li.side-head__icons
+          = link_to '#' do
+            = icon('fas', 'cog',class: "icon-coler")
+  .groups
+    .group
+      .group__name
+      .grpup__last-message

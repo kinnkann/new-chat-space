@@ -3,6 +3,7 @@
 }
 .wrapper {
   display: flex; //mainとsideを横並びにします
+  margin: 0 auto;
 }
 
 //サイドバー
@@ -15,11 +16,38 @@
   background-color: #253141;
   height: 100px;
   width: 100%;
+  display: flex;//この行と
+  justify-content: center;//この行と
+  align-items: center;//この行はセット、上下左右中央に名前とアイコンの箱を揃える方法
+  color: white;
+  &__left-box{
+    height: 20px;
+    width: 260px;
+    display: flex;//この行と
+    justify-content: space-between;//この行と
+    align-items: center;//この行はセット、中央にアイコン2つの箱を持ってくる
+  }
+  &__icon-box{
+    height: 100%;
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__icons{
+    margin-left: 5px;
+  }
 }
 
-.side-main{
+.icon-coler{
+  color: white;
+}
+
+.groups{
   background-color: #2f3e51;
   height: calc(100vh - 100px);
+  .group{
+    margin-bottom: 40px;
+  }
 }
 
 //メイン
@@ -34,7 +62,7 @@
   background-color: #ffffff;
 }
 .main-body{
-  height: auto;
+  height: calc(100vh - 190px);
   background-color: #fafafa;
 }
 .footer{
