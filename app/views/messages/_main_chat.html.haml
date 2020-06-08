@@ -21,10 +21,10 @@
       %p.message__text
         こんにちは
   .form
-    %form
-      %input.form__message
-      .form__mask
-        %label.form__mask__image
+    %form.new-message
+      .input-box
+        %input{type: 'text',class:"input-box__text",placeholder: "aaa"}
+        %label.input-box__image
           = icon('fas', 'image')
           %input.hidden{type: 'file'}
       %input.form__submit{type: 'submit', value: 'Send'}
