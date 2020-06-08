@@ -1,0 +1,30 @@
+.main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        aaa
+      %ul.main-header__left-box__list
+        Member : 
+        %li.main-header__left-box__menber
+          aaa
+        %li.main-header__left-box__menber
+          aaa
+    = link_to 'Edit', '#', class: 'main-header__edit-btn'
+
+  .main-body
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker
+          user
+        %p.message__upper-info__date
+          2020/06/05(Fri)
+      %p.message__text
+        こんにちは
+  .form
+    %form.new-message
+      .input-box
+        %input{type: 'text',class:"input-box__text",placeholder: "aaa"}
+        %label.input-box__image
+          = icon('fas', 'image')
+          %input.hidden{type: 'file'}
+      %input.form__submit{type: 'submit', value: 'Send'}
