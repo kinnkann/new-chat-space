@@ -3,7 +3,7 @@
 }
 .wrapper {
   display: flex; //mainとsideを横並びにします
-  margin: 0 auto;
+  margin: 0 auto; //左右中央寄せ
 }
 
 //サイドバー
@@ -35,7 +35,7 @@
     justify-content: flex-end; //右揃え
   }
   &__icons{
-    margin-left: 5px;
+    margin-left: 5px; //5px左にマージンを作成する
   }
 }
 
@@ -47,7 +47,7 @@
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   padding: 20px 20px 0;
-  overflow: scroll;
+  overflow: scroll; //スクロールするやつ
   .group{
     margin-bottom: 40px;
     &__name{
@@ -72,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px #eee;
-  overflow: scroll;  //?
+  overflow: scroll;  //おそらくスクロールができるようにするためのプロパティ
 
   &__left-box{
     font-size: 20px;
@@ -98,7 +98,7 @@
     padding: 0 20px;
     margin-top: 30px;
     border: solid 1px #38aef0;
-    position: absolute;
+    // position: absolute;
     right: 40px;
     text-decoration: none; //下線消す
     color: #38aef0;
@@ -134,20 +134,6 @@
   }
 }
 
-// .form{
-//   height: 90px;
-//   padding: 20px 40px;
-//   background-color: #ddd;
-//   display: flex;
-//   position: relative;
-//   &__message{
-//     width: 100%;
-//   }
-//   &__mask{
-//     position: absolute;
-//   }
-// }
-
 .form {
   height: 90px;
   background-color: #d2d2d2;
@@ -158,7 +144,7 @@
   .input-box{
     display: flex;
     width: 100%;
-    position: relative;
+    position: relative; //親はこれ。投稿フォームの範囲を指定する
     &__text {
       height: 50px;
       width: 100%;
@@ -168,12 +154,12 @@
     }
     &__image {
       font-size: 1.3rem;
-      cursor: pointer;
-      position: absolute;
+      cursor: pointer; //マウスカーソルがポインターになる
+      position: absolute; //イメージアイコンをフォームの中に放り込む
       top: 10px;
       right: 10px;
       .hidden {
-        display: none;
+        display: none; //テキストを隠す
       }
     }
   }
